@@ -515,3 +515,15 @@
     opacity: 1;
   }
 }
+
+.hb-fireworks{
+  position: absolute;
+  inset: 0;
+  z-index: 0;              /* rope va card ostida/ustida o'ynaymiz */
+  pointer-events: none;
+  border-radius: 22px;
+  mix-blend-mode: screen;
+  opacity: 1;
+}
+
+
