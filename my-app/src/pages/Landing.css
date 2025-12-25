@@ -1,0 +1,76 @@
+.hb-landing {
+  position: relative;
+  min-height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Global BG layer */
+.hb-global-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hb-global-grid {
+  position: absolute;
+  inset: -120px;
+  background-image:
+    linear-gradient(to right, rgba(2,6,23,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(2,6,23,0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: 0.75;
+  mask-image: radial-gradient(circle at 40% 30%, rgba(0,0,0,1), rgba(0,0,0,0) 68%);
+}
+
+.hb-global-spot {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 999px;
+  filter: blur(60px);
+  background: rgba(59,130,246,0.75);
+  opacity: 0.18;
+}
+
+.hb-global-spot-1 { left: -180px; top: -180px; opacity: 0.22; }
+.hb-global-spot-2 { right: -220px; top: 40px; opacity: 0.14; }
+.hb-global-spot-3 { right: 120px; bottom: -220px; opacity: 0.12; }
+
+/* particles */
+.hb-global-p {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(59,130,246,0.35);
+  background: rgba(59,130,246,0.12);
+  box-shadow: 0 12px 30px rgba(59,130,246,0.10);
+  animation: hb-global-float 4.8s ease-in-out infinite;
+}
+
+@keyframes hb-global-float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
+
+.hb-global-p1 { left: 10%; top: 20%; animation-delay: 0s; }
+.hb-global-p2 { left: 18%; top: 70%; animation-delay: 0.6s; }
+.hb-global-p3 { left: 38%; top: 12%; animation-delay: 1.2s; }
+.hb-global-p4 { right: 22%; top: 18%; animation-delay: 0.3s; }
+.hb-global-p5 { right: 10%; top: 62%; animation-delay: 0.9s; }
+.hb-global-p6 { right: 42%; top: 78%; animation-delay: 1.5s; }
+
+/* Content above BG */
+.hb-global-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Smooth transitions between sections */
+.hb-global-content section {
+  background: transparent !important;
+}
