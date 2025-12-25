@@ -63,9 +63,9 @@ export default function HeroSection() {
           <h1 className="hb-title">
   <span className="hb-title-static">3D tabrik-sayt:</span>{" "}
   <span className="hb-words">
-    <span className="hb-word" style={{ "--d": 1 }}>ism</span>
-    <span className="hb-word" style={{ "--d": 2 }}>rasm</span>
-    <span className="hb-word" style={{ "--d": 3 }}>tilak</span>
+    <span className="hb-word" style={{ "--d": 1 }}>[ism]</span>
+    <span className="hb-word" style={{ "--d": 2 }}>[rasm]</span>
+    <span className="hb-word" style={{ "--d": 3 }}>[tilak]</span>
   </span>
   <span className="hb-title-end"> — link orqali ochiladi.</span>
 </h1>
